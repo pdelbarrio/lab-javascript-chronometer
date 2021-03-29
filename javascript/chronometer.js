@@ -25,12 +25,15 @@ class Chronometer {
     }
   }
   stopClick() {
-    // ... your code goes here
+    clearInterval(this.intervalId);
   }
   resetClick() {
-    // ... your code goes here
+    this.currentTime = 0;
   }
   splitClick() {
-    // ... your code goes here
+    let min = this.getMinutes();
+    let sec = this.getSeconds();
+
+    return `${this.twoDigitsNumber(min)}:${this.twoDigitsNumber(sec)}`;
   }
 }
