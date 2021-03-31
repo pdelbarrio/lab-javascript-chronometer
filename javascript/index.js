@@ -54,6 +54,7 @@ function setStartBtn() {
 }
 
 function setResetBtn() {}
+
 // Start/Stop Button
 btnLeft.addEventListener("click", (event) => {
   event.preventDefault();
